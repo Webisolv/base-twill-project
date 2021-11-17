@@ -20,6 +20,21 @@ $cropConfig = [
 ];
 
 return [
+    'dashboard' => [
+        'modules' => [
+            'pages' => [
+                'name' => 'pages',
+                'routePrefix' => 'content',
+                'repository' => \App\Twill\Capsules\Pages\Repositories\PageRepository::class,
+                'count' => true,
+                'create' => true,
+                'activity' => true,
+                'draft' => true,
+                'search' => true,
+                'search_fields' => ['title']
+            ],
+        ],
+    ],
     'publish_date_24h' => true,
     'settings' => true,
     'locale' => 'en',
