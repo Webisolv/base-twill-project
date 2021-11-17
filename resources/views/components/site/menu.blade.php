@@ -7,7 +7,7 @@
 @endphp
 <div x-data="{ mobileMenuIsOpen: false}">
     <div class="flex py-4 max-w-5xl mx-auto justify-between px-8 md:px-0">
-        <a href="{{route('front.homepage')}}" class="font-semibold leading-none text-black">
+        <a href="{{LaravelLocalization::localizeUrl(route('front.homepage'))}}" class="font-semibold leading-none text-black">
             logo comes here
         </a>
         <button type="button"

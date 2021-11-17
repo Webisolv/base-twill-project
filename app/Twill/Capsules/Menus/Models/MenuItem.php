@@ -8,6 +8,7 @@ use A17\Twill\Models\Behaviors\HasPosition;
 use A17\Twill\Models\Behaviors\HasTranslation;
 use A17\Twill\Models\Behaviors\Sortable;
 use App\Twill\Capsules\Base\Model;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
 class MenuItem extends Model implements Sortable
@@ -58,7 +59,7 @@ class MenuItem extends Model implements Sortable
         switch ($this->destination) {
             case 'internal':
                 if ($this->linkable) {
-                    $baseUrl = '/' . $this->linkable->slug;
+                    $baseUrl = LaravelLocalization::localizeUrl(route('front.page', ['slug' => $this->linkable->slug]));
                 } else {
                     $baseUrl = '/';
                 }
