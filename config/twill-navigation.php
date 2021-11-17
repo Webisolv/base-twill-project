@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'customPage' => [
+        'title' => 'Custom page',
+        'route' => 'admin.customPage',
+    ],
     'content' => [
         'title' => 'Content',
         'route' => 'admin.content.pages.index',
