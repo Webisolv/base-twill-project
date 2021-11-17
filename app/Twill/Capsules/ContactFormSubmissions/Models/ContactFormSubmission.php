@@ -7,6 +7,9 @@ use A17\Twill\Models\Behaviors\HasFiles;
 use A17\Twill\Models\Model;
 use App\Twill\Capsules\ContactFormSubmissions\Events\NewContactFormSubmissionEvent;
 
+/**
+ * @mixin IdeHelperContactFormSubmission
+ */
 class ContactFormSubmission extends Model
 {
     use HasMedias, HasFiles;

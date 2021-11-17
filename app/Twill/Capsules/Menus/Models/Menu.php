@@ -10,6 +10,9 @@ use A17\Twill\Models\Behaviors\Sortable;
 use App\Twill\Capsules\Base\Model;
 
 
+/**
+ * @mixin IdeHelperMenu
+ */
 class Menu extends Model implements Sortable
 {
     use HasTranslation;

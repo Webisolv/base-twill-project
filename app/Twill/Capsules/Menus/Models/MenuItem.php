@@ -11,6 +11,9 @@ use App\Twill\Capsules\Base\Model;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
+/**
+ * @mixin IdeHelperMenuItem
+ */
 class MenuItem extends Model implements Sortable
 {
     use HasPosition;

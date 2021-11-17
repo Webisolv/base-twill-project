@@ -11,6 +11,9 @@ use A17\Twill\Models\Behaviors\HasRevisions;
 use App\Twill\Capsules\Base\FrontEndModel;
 use Spatie\Activitylog\Traits\LogsActivity;
 
+/**
+ * @mixin IdeHelperPage
+ */
 class Page extends FrontEndModel
 {
     use HasBlocks, HasTranslation, HasSlug, HasMedias, HasFiles, HasRevisions, LogsActivity;
