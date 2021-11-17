@@ -9,10 +9,11 @@ use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Behaviors\HasFiles;
 use A17\Twill\Models\Behaviors\HasRevisions;
 use App\Twill\Capsules\Base\FrontEndModel;
+use Spatie\Activitylog\Traits\LogsActivity;
 
 class Page extends FrontEndModel
 {
-    use HasBlocks, HasTranslation, HasSlug, HasMedias, HasFiles, HasRevisions;
+    use HasBlocks, HasTranslation, HasSlug, HasMedias, HasFiles, HasRevisions, LogsActivity;
 
     protected $fillable = [
         'published',

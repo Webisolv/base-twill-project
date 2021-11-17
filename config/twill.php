@@ -38,6 +38,7 @@ return [
     'publish_date_24h' => true,
     'settings' => true,
     'locale' => 'en',
+    'activitylog' => true,
     'fallback_locale' => 'en',
     'available_user_locales' => [
         'en',
